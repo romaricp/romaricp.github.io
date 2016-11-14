@@ -21,4 +21,14 @@ phone: +33 6 38 94 32 97
 linkedin: romaric-paul
 github: romaricp
 twitter: '@romaricp'
+instagram: 'rom_a_ric'
+
+# add this plugin to gems
+#gems: ['jekyll-multiple-languages']
+
+# The all languages used
+#languages: ['en', 'fr']
+
+# If not config, the first item of languages will be used as the default.
+#language_default: 'en'
 
