@@ -1,7 +1,6 @@
 
-title: My Resume
+title: Romaric PAUL - Web Developer PHP - Symfony Addict
 url: 'http://romaricp.github.io'
-
 
 # Enable one of these styles by removing #
 #style: styles-2
@@ -10,19 +9,16 @@ url: 'http://romaricp.github.io'
 #style: styles-5
 #style: styles-6
 
-
-
-
 #Profile information
-name: Alan Doe
-tagline: Full Stack Developer
+name: Romaric PAUL
+tagline: Developer PHP / Symfony Addict
 pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
 #sidebar links
-email: alan.doe@website.com
-phone: 012 345 6789
-website: blog.webjeda.com #do not add http://
-linkedin: alandoe
-github: alandoe
-twitter: '@twittername'
+email: romaric.paul@gmail.com
+phone: +33 6 38 94 32 97
+#website: romaricp.github.io/blog #do not add http://
+linkedin: romaric-paul
+github: romaricp
+twitter: '@romaricp'
 
