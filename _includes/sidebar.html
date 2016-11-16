@@ -2,21 +2,21 @@
 
                  
      <div class="sidebar-wrapper">
-            <div class="profile-container">
+            <div class="profile-container" itemscope itemtype="http://schema.org/Person">
                 <img class="profile" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture" />
-                <h1 class="name">{% if site.name %}{{site.name}}{% else %}Alan Doe{% endif %}</h1>
-                <!--<h3 class="tagline">{% if site.tagline %}{{site.tagline}}{% else %}Full Stack Developer{% endif %}</h3>-->
+                <h1 class="name"><span itemprop="givenName">{% if site.lastname %}{{site.lastname}}{% endif %}</span> <span itemprop="familyName">{% if site.name %}{{site.name}}{% endif %}</span></h1>
+                <h2 class="tagline" itemprop="jobTitle">{% if site.tagline %}{{site.tagline}}{% endif %}</h2>
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
                    
                    {% if site.email %}
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}">{{site.email}}</a></li>
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{site.email}}" itemprop="email">{{site.email}}</a></li>
                     {% endif %}
                     
                     {% if site.phone %}
-                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}">{{site.phone}}</a></li>
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:{{site.phone}}" itemprop="telephone">{{site.phone}}</a></li>
                     {% endif %}
                     
                     {% if site.website %}

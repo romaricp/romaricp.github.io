@@ -10,8 +10,9 @@ url: 'http://romaricp.github.io'
 #style: styles-6
 
 #Profile information
-name: Romaric PAUL
-tagline: Developer PHP / Symfony2 & 3 Addict
+name: PAUL
+lastname: Romaric
+tagline: Developer Backend PHP 
 pic: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
 #sidebar links
