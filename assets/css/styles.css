@@ -246,6 +246,16 @@ p {
   height: 12px;
   background: #7bc2d3;
 }
+.skillset ul {
+  list-style: none;
+}
+.skillset li{
+  margin-bottom: 15px;
+}
+.skillset i{
+  color: #eb763b;
+  font-size: 0.3em;
+}
 .footer {
   padding: 30px;
   padding-top: 60px;
