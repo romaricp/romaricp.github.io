@@ -95,6 +95,9 @@ p {
 .sidebar-wrapper .contact-list li:last-child {
   margin-bottom: 0;
 }
+.sidebar-wrapper .contact-list .whatsapp {
+  font-size: 10px;
+}
 .sidebar-wrapper .contact-list .email .fa {
   font-size: 14px;
 }
