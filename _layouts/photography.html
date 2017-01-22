@@ -1,0 +1,57 @@
+---
+layout: compress
+title: Photography
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+{% include photography/head.html %}
+
+<body>
+	<div class="container-fluid">
+	  <div class="row">
+	    <div class="col-sm-3 col-md-2 sidebar">
+	      <ul class="nav nav-sidebar">
+			{% for post in site.posts %}
+				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+	      </ul>
+	    </div>
+	    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	      <h1 class="page-header">{{ page.title }}</h1>
+
+{% assign foo = {{ page.slug }} %}
+la varibale : {{ foo }}
+
+{{ site.data.photos.new-zealand.images }}
+{% for photo in site.data.photos.new-zealand.images %}
+	<img src="{{ site.data.photos.new-zealand.imagefolder }}/{{ photo.name }}" alt="">
+{% endfor %}
+
+	      assets/photography/albums/{{ page.slug }}/
+
+			{% for image in site.static_files %}
+			    {% if image.path contains 'assets/photography/albums/{{ post.slug }}/' %}
+			        <img src="{{ site.baseurl }}{{ image.path }}" class="img-responsive photography" alt="image" />
+			    {% endif %}
+			{% endfor %}
+	    </div>
+	  </div>
+	</div>
+           
+{% include photography/scripts.html %}
+</body>
+</html> 
+
+<!-- {{ page.slug | inspect }} -->
+<!--
+	      	    {% for post in site.posts limit:1 %}
+					{{ post.title }}
+				{% endfor %}
+<!-- {% assign author = site.data.people[page.author] %} -->
+<!--
+{% for photo in site.data.photography.nz.photos %}
+	<img src="{{ site.data.photography.nz.photofolder }}/{{ photo.name }}" alt="">
+{% endfor %}
+-->
