@@ -1,0 +1,20 @@
+<div class="col-sm-3 col-md-2 sidebar">
+  <h2><a href="{{ site.url }}/photography">Romaric Paul</a></h2>
+  <div class="space"></div>
+
+  <ul class="nav nav-sidebar">
+	{% for post in site.posts reversed %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+  </ul>
+
+</div>
+
+<div class="visible-xs col-xs-12 listmenu">
+  <h2><a href="{{ site.url }}/photography">Romaric Paul</a></h2>
+  <select onchange="location = this.value;">
+	{% for post in site.posts reversed %}
+		<option value="{{ site.url }}{{ post.url }}" {% if page.url == post.url %}selected{% endif %}>{{ post.title }}</option>
+	{% endfor %}
+  </select>
+</div>

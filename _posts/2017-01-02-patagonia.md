@@ -1,8 +1,8 @@
 ---
 layout: photography
-title:  "New Zealand"
-slug: 'new-zealand'
-permalink: /photography/new-zealand/
+title:  "Patagonia"
+slug: 'patagonia'
+permalink: /photography/patagonia/
 ---
 
 <img src="{{ site.url }}/assets/photography/albums/{{ page.slug }}/1.jpg" alt="" class="img-responsive photography">

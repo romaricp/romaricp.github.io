@@ -1,3 +1,11 @@
+body, h1 {
+  font-family: 'Oswald', sans-serif !important;
+}
+
+h1, .page-header {
+  border-bottom: none;
+}
+
 /*
  * Sidebar
  */
@@ -20,6 +28,14 @@
     background-color: white;
     border-right: 1px solid #eeeeee;
   }
+}
+
+@media (max-width: 769px) {
+    h2{
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 0px;
+    }
 }
 
 /* Sidebar navigation */
@@ -62,6 +78,28 @@
   /* max-width: 2000px; */
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+h2 a{
+  color:#e6e6e6;
+  text-decoration: none;
+}
+
+h2 a:hover, h2 a:focus{
+  color:#adadad;
+  text-decoration: none;
+}
+
+.space {
+  margin-bottom: 30px;
+}
+
+.listmenu{
+  margin-top: 20px;
+}
+
+.listmenu select{
+  width: 100%;
 }
 
 /*
