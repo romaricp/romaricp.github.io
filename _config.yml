@@ -10,6 +10,7 @@ github: romaricp
 twitter: '@romaricp'
 instagram: 'rom_a_ric'
 travelgram: 'letsgetlost'
+medium: '@romaricp'
 
 # add this plugin to gems
 #gems: ['jekyll-multiple-languages']
@@ -19,4 +20,3 @@ travelgram: 'letsgetlost'
 
 # If not config, the first item of languages will be used as the default.
 #language_default: 'en'
-

@@ -1,0 +1,21 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="fr" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="fr" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="fr"> <!--<![endif]-->
+{% include cv/head.html %}
+
+<body>
+    {% include cv/fr/top.html %}
+    <div class="wrapper">
+        {% include cv/fr/sidebar.html %}
+        <div class="main-wrapper">
+           {{content}}
+        </div><!--//main-body-->
+    </div>
+{% include cv/footer.html %}
+{% include cv/scripts.html %}
+</body>
+</html>

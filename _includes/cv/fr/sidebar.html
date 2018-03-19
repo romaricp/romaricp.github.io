@@ -1,0 +1,48 @@
+<!-- Use icons from fontawesome when you are adding new item in the contact list  -->             
+
+                 
+     <div class="sidebar-wrapper">
+            <div class="profile-container" itemscope itemtype="http://schema.org/Person">
+                <img class="profile" src="{{site.baseurl}}/assets/cv/images/profile.png" alt="profile picture" />
+                <h1 class="name"><span itemprop="givenName">Romaric</span> <span itemprop="familyName">PAUL</span></h1>
+                <h2 class="tagline" itemprop="jobTitle">Developer Backend PHP</h2>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+
+                    {% if site.email %}
+                    <li class="email"><i class="fa fa-envelope"></i> <a href="mailto:{{site.email}}" itemprop="email">{{site.email}}</a></li>
+                    {% endif %}
+
+                    {% if site.phone %}
+                    <li class="phone"><i class="fab fa-whatsapp"></i> <a href="tel:{{site.phone}}" itemprop="telephone">{{site.phone}}</a> <span class="whatsapp">(preferably via WhatsApp)</span></li>
+                    {% endif %}
+
+                    {% if site.website %}
+                    <li class="website"><i class="fa fa-globe"></i> <a href="http://{{site.website}}" target="_blank">{{site.website}}</a></li>
+                    {% endif %}
+
+                    {% if site.linkedin %}
+                    <li class="linkedin"><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/{{site.linkedin}}" target="_blank">linkedin.com/myprofile</a></li>
+                    {% endif %}
+
+                    {% if site.github %}
+                    <li class="github"><i class="fab fa-github"></i> <a href="http://github.com/{{site.github}}" target="_blank">github.com/{{site.github}}</a></li>
+                    {% endif %}
+
+                    {% if site.twitter %}
+                    <li class="twitter"><i class="fab fa-twitter"></i> <a href="https://twitter.com/{{site.twitter}}" target="_blank">{{site.twitter}}</a></li>
+                    {% endif %}
+
+                    {% if site.medium %}
+                    <li class="medium"><i class="fab fa-medium-m"></i> <a href="https://medium.com/{{site.medium}}" target="_blank">{{site.medium}}</a></li>
+                    {% endif %}
+
+                    {% if site.travelgram %}
+                    <li class="twitter"><i class="fa fa-plane"></i> <a href="http://letsgetlost.travelgram.co/" target="_blank">Let's get lost !</a></li>
+                    {% endif %}
+                    
+                </ul>
+            </div><!--//contact-container-->
+        </div><!--//sidebar-wrapper-->
